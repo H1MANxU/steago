@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/* Field journal: paper, ink, moss, rust. */
+:root {
+  color-scheme: light;
+  --background: #f3eee2;
+  --foreground: #1e2620;
+  --card: #fbf8f1;
+  --card-foreground: #1e2620;
+  --popover: #fbf8f1;
+  --popover-foreground: #1e2620;
+  --primary: #3b5b3f;
+  --primary-foreground: #f7f3ea;
+  --secondary: #e7dfcc;
+  --secondary-foreground: #1e2620;
+  --muted: #e9e2d2;
+  --muted-foreground: #585246;
+  --accent: #a24f28;
+  --accent-foreground: #fbf8f1;
+  --destructive: #9e2f1d;
+  --border: #d6ccb6;
+  --input: #cfc4ac;
+  --ring: #3b5b3f;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: radial-gradient(rgb(30 38 32 / 0.035) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+}
+
+@layer utilities {
+  .ruled {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2.75rem,
+      var(--border) 2.75rem,
+      var(--border) calc(2.75rem + 1px)
+    );
+  }
+}
+
+@keyframes discovery-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-discovery {
+  animation: discovery-in 260ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-discovery {
+    animation: none;
+  }
+}
