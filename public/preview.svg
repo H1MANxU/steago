@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09111F"/>
+      <stop offset="1" stop-color="#0C1F2D"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1F3B5C"/>
+      <stop offset="1" stop-color="#15324C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+  <circle cx="178" cy="168" r="110" fill="#A7F3D0" fill-opacity="0.14"/>
+  <circle cx="1030" cy="460" r="150" fill="#67E8F9" fill-opacity="0.10"/>
+
+  <rect x="132" y="118" width="936" height="394" rx="26" fill="url(#card)" stroke="#345D7D"/>
+
+  <rect x="178" y="170" width="208" height="288" rx="18" fill="#0B1727" fill-opacity="0.78" stroke="#2A4E69"/>
+  <rect x="218" y="214" width="130" height="12" rx="6" fill="#8DE7C7"/>
+  <rect x="218" y="244" width="98" height="10" rx="5" fill="#7EC8FF" fill-opacity="0.8"/>
+  <rect x="218" y="290" width="124" height="72" rx="12" fill="#1C3D56"/>
+  <circle cx="242" cy="321" r="18" fill="#E7F9F0" fill-opacity="0.85"/>
+  <path d="M317 327C323 297 346 284 365 298C381 310 382 332 363 346L334 364L317 327Z" fill="#A7F3D0"/>
+
+  <rect x="430" y="170" width="560" height="62" rx="18" fill="#0D1E2E" fill-opacity="0.8" stroke="#2C4F69"/>
+  <text x="470" y="210" fill="#E6F7FF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Steago</text>
+  <text x="585" y="210" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="18">Bird discovery</text>
+
+  <rect x="430" y="252" width="560" height="88" rx="16" fill="#0C1E2B" stroke="#2C4F69"/>
+  <rect x="454" y="277" width="200" height="14" rx="7" fill="#A7F3D0"/>
+  <rect x="454" y="304" width="290" height="12" rx="6" fill="#7EC8FF" fill-opacity="0.75"/>
+
+  <rect x="430" y="364" width="260" height="72" rx="16" fill="#143247" stroke="#2C4F69"/>
+  <text x="468" y="395" fill="#EAFBFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Listen</text>
+  <text x="468" y="420" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="15">Bird call preview</text>
+
+  <rect x="710" y="364" width="280" height="72" rx="16" fill="#143247" stroke="#2C4F69"/>
+  <text x="748" y="395" fill="#EAFBFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Journal</text>
+  <text x="748" y="420" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="15">Track sightings</text>
+
+  <text x="132" y="570" fill="#D7F4FF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">Steago</text>
+</svg>
