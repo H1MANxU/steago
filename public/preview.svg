@@ -1,43 +1,76 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#09111F"/>
-      <stop offset="1" stop-color="#0C1F2D"/>
+    <pattern id="dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#C9BFAE" fill-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F3EA"/>
+      <stop offset="1" stop-color="#F3EBD8"/>
     </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#1F3B5C"/>
-      <stop offset="1" stop-color="#15324C"/>
-    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#B9A58D" flood-opacity="0.18"/>
+    </filter>
   </defs>
 
-  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
-  <circle cx="178" cy="168" r="110" fill="#A7F3D0" fill-opacity="0.14"/>
-  <circle cx="1030" cy="460" r="150" fill="#67E8F9" fill-opacity="0.10"/>
+  <rect width="1200" height="1400" fill="url(#bg)"/>
+  <rect width="1200" height="1400" fill="url(#dots)" opacity="0.9"/>
 
-  <rect x="132" y="118" width="936" height="394" rx="26" fill="url(#card)" stroke="#345D7D"/>
+  <text x="70" y="120" fill="#1F2423" font-size="74" font-family="Georgia, 'Times New Roman', serif" font-weight="700">BirdStreak</text>
 
-  <rect x="178" y="170" width="208" height="288" rx="18" fill="#0B1727" fill-opacity="0.78" stroke="#2A4E69"/>
-  <rect x="218" y="214" width="130" height="12" rx="6" fill="#8DE7C7"/>
-  <rect x="218" y="244" width="98" height="10" rx="5" fill="#7EC8FF" fill-opacity="0.8"/>
-  <rect x="218" y="290" width="124" height="72" rx="12" fill="#1C3D56"/>
-  <circle cx="242" cy="321" r="18" fill="#E7F9F0" fill-opacity="0.85"/>
-  <path d="M317 327C323 297 346 284 365 298C381 310 382 332 363 346L334 364L317 327Z" fill="#A7F3D0"/>
+  <g filter="url(#shadow)">
+    <rect x="70" y="190" width="500" height="240" rx="20" fill="#F4EFE9" stroke="#D8CDBB"/>
+    <rect x="630" y="190" width="500" height="240" rx="20" fill="#F4EFE9" stroke="#D8CDBB"/>
+  </g>
 
-  <rect x="430" y="170" width="560" height="62" rx="18" fill="#0D1E2E" fill-opacity="0.8" stroke="#2C4F69"/>
-  <text x="470" y="210" fill="#E6F7FF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Steago</text>
-  <text x="585" y="210" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="18">Bird discovery</text>
+  <g>
+    <text x="118" y="260" fill="#1D2120" font-size="32" font-family="Georgia, 'Times New Roman', serif">Streak</text>
+    <path d="M118 283L150 283" stroke="#B65A36" stroke-width="3" stroke-linecap="round"/>
+    <path d="M136 270C142 265 146 260 149 253C152 260 156 265 162 270C156 272 152 276 149 282C146 276 142 272 136 270Z" fill="#B65A36"/>
+    <text x="118" y="350" fill="#1B201F" font-size="86" font-family="Georgia, 'Times New Roman', serif" font-weight="700">0</text>
+    <text x="118" y="405" fill="#1D2120" font-size="32" font-family="Georgia, 'Times New Roman', serif">days</text>
+    <text x="118" y="462" fill="#1D2120" font-size="28" font-family="Georgia, 'Times New Roman', serif">Start one today</text>
+  </g>
 
-  <rect x="430" y="252" width="560" height="88" rx="16" fill="#0C1E2B" stroke="#2C4F69"/>
-  <rect x="454" y="277" width="200" height="14" rx="7" fill="#A7F3D0"/>
-  <rect x="454" y="304" width="290" height="12" rx="6" fill="#7EC8FF" fill-opacity="0.75"/>
+  <g>
+    <text x="680" y="260" fill="#1D2120" font-size="32" font-family="Georgia, 'Times New Roman', serif">Level</text>
+    <text x="680" y="365" fill="#1B201F" font-size="94" font-family="Georgia, 'Times New Roman', serif" font-weight="700">1</text>
+    <rect x="680" y="395" width="395" height="18" rx="9" fill="#D6CBB9"/>
+    <rect x="680" y="395" width="100" height="18" rx="9" fill="#C8D6C1"/>
+    <text x="680" y="470" fill="#1D2120" font-size="28" font-family="Georgia, 'Times New Roman', serif">0 / 500 XP</text>
+  </g>
 
-  <rect x="430" y="364" width="260" height="72" rx="16" fill="#143247" stroke="#2C4F69"/>
-  <text x="468" y="395" fill="#EAFBFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Listen</text>
-  <text x="468" y="420" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="15">Bird call preview</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="520" width="1060" height="260" rx="22" fill="#F4EFE9" stroke="#D8CDBB"/>
+  </g>
+  <text x="110" y="565" fill="#B65A36" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="2">TODAY'S QUEST</text>
 
-  <rect x="710" y="364" width="280" height="72" rx="16" fill="#143247" stroke="#2C4F69"/>
-  <text x="748" y="395" fill="#EAFBFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Journal</text>
-  <text x="748" y="420" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="15">Track sightings</text>
+  <g>
+    <circle cx="120" cy="670" r="26" stroke="#1A1E1D" stroke-width="4" fill="none"/>
+    <text x="175" y="685" fill="#1B201F" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700">Confirm a species you haven't</text>
+    <text x="175" y="735" fill="#1B201F" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700">recorded before</text>
+  </g>
 
-  <text x="132" y="570" fill="#D7F4FF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">Steago</text>
+  <line x1="95" y1="790" x2="1105" y2="790" stroke="#D5CAB9" stroke-width="2"/>
+  <text x="110" y="845" fill="#1A1E1D" font-size="28" font-family="Georgia, 'Times New Roman', serif">0 of 1 • +100 XP</text>
+  <line x1="95" y1="885" x2="1105" y2="885" stroke="#D5CAB9" stroke-width="2"/>
+  <text x="110" y="950" fill="#1D2120" font-size="24" font-family="Georgia, 'Times New Roman', serif">Recordings will be saved until the bird identifier is</text>
+  <text x="110" y="980" fill="#1D2120" font-size="24" font-family="Georgia, 'Times New Roman', serif">downloaded in Settings.</text>
+
+  <g>
+    <text x="70" y="1095" fill="#1C1F1E" font-size="36" font-family="Georgia, 'Times New Roman', serif" font-style="italic">Your journal is empty. Go outside and record</text>
+    <text x="70" y="1135" fill="#1C1F1E" font-size="36" font-family="Georgia, 'Times New Roman', serif" font-style="italic">your first call.</text>
+  </g>
+
+  <g>
+    <rect x="70" y="1215" width="1060" height="110" rx="18" fill="#335B4D"/>
+    <path d="M150 1280C150 1265 162 1253 177 1253H186C201 1253 213 1265 213 1280V1290C213 1305 201 1317 186 1317H177C162 1317 150 1305 150 1290V1280Z" stroke="#F2F9F6" stroke-width="4" fill="none"/>
+    <path d="M172 1260C172 1246 183 1235 197 1235H200C214 1235 225 1246 225 1260V1267H172V1260Z" stroke="#F2F9F6" stroke-width="4" fill="none"/>
+    <text x="265" y="1288" fill="#F2F9F6" font-size="46" font-family="Georgia, 'Times New Roman', serif" font-weight="700">Listen</text>
+  </g>
+
+  <g>
+    <rect x="70" y="1345" width="1060" height="90" rx="18" fill="#F4EFE9" stroke="#D8CDBB"/>
+    <rect x="115" y="1382" width="30" height="30" rx="5" stroke="#1D2120" stroke-width="4" fill="none"/>
+    <text x="175" y="1407" fill="#1D2120" font-size="42" font-family="Georgia, 'Times New Roman', serif">Journal • 0 species</text>
+  </g>
 </svg>
