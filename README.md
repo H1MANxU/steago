@@ -2,7 +2,7 @@
 
 A small, offline-first Next.js + TypeScript PWA for exploring bird species and audio — built for users who want quick species lookup and journaling on the web or as an installable app.
 
-![UI preview](./public/preview.png)
+![UI preview](./public/preview.svg)
 
 Badges: [![License: MIT](https://img.shields.io/badge/license-MIT-green)]() [![CI](https://img.shields.io/badge/ci-passing-brightgreen)]()
 
@@ -21,3 +21,4 @@ pnpm dev
 # build for production
 pnpm build
 pnpm start
+```
